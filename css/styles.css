@@ -261,16 +261,12 @@ main{ padding: 30px 0 70px; }
 
   .hero{
     padding: 0;
-    height: auto;
-    min-height: calc(var(--viewport-height) - var(--header-h) - 150px);
-    max-height: calc(var(--viewport-height) - var(--header-h) - 150px);
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
+    height: 685px;
   }
   .hero .container{
-    padding-bottom: 72px;
-    margin-top: auto;
+    padding-bottom: 0;
+    height: 642px;
+    column-gap: 0;
   }
   .hero .media{
     transform: scale(0.65);
@@ -564,17 +560,6 @@ input:focus, textarea:focus{
   }
   body.nav-open .site-nav{ display:flex; }
   .site-nav a{ border-radius: 14px; }
-
-  .hero{
-    min-height: auto;
-    max-height: none;
-    justify-content: flex-start;
-    padding: 30px 0;
-  }
-  .hero .container{
-    padding-bottom: 30px;
-    margin-top: 0;
-  }
 }
 
 @media (prefers-reduced-motion: reduce){
