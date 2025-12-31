@@ -577,6 +577,8 @@ input:focus, textarea:focus{
 .prose li{ margin: 12px 0; }
 .card.prose{
   margin: 0 auto;
+  max-width: 100%;
+  width: 100%;
 }
 
 /* MOBILE */
