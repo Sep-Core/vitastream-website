@@ -199,6 +199,8 @@ main > .hero{
   border: 1px solid var(--border);
   border-radius: var(--radius);
   box-shadow: var(--shadow);
+  width: fit-content;
+  height: fit-content;
 }
 .card.pad{ padding: 22px; }
 
@@ -261,6 +263,10 @@ main > .hero{
   display:block;
   object-fit: contain;
   border-radius: var(--radius);
+}
+.media-scaled{
+  width: 30%;
+  margin: 0 auto;
 }
 .media.fallback{
   min-height: 200px;
@@ -346,6 +352,7 @@ main > .hero{
 .hero .container.grid-2.align-center > div:first-child{
   padding: 0;
   padding-top: 64px;
+  padding-left: 24px;
   margin: 0;
 }
 
@@ -568,6 +575,9 @@ input:focus, textarea:focus{
 .prose p{ margin: 0 0 14px; }
 .prose ol{ margin: 0; padding-left: 20px; }
 .prose li{ margin: 12px 0; }
+.card.prose{
+  margin: 0 auto;
+}
 
 /* MOBILE */
 @media (max-width: 900px){
