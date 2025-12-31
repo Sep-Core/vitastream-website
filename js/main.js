@@ -93,10 +93,10 @@
     const form = document.querySelector("form[data-validate='contact']");
     if (form) {
       const status = document.querySelector(".form-status");
-  
+
       form.addEventListener("submit", (e) => {
         e.preventDefault();
-  
+
         // native validation
         if (!form.checkValidity()) {
           form.reportValidity();
@@ -106,12 +106,13 @@
           }
           return;
         }
-  
+
         if (status) {
           status.classList.add("show");
-          status.textContent = "Thanks! Your information has been received. We’ll contact you via email as soon as possible.";
+          status.textContent = "Thanks! Your information has been received. We'll contact you via email as soon as possible.";
         }
         form.reset();
       });
     }
+
   })();
